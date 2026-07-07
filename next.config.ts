@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "uploads-demo-bucket.s3.ap-southeast-2.amazonaws.com",
+        hostname: "devstacked-uploads-demo.s3.ap-southeast-2.amazonaws.com",
       },
       {
         protocol: "https",
