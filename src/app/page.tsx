@@ -1,6 +1,8 @@
 import { MultipartUploadForm } from "@/components/multipart-upload-form";
 import { PresignedUploadForm } from "@/components/presigned-upload-form";
+import { PrivateImage } from "@/components/private-image";
 import { ProxyUploadForm } from "@/components/proxy-upload-form";
+import { PublicAvatar } from "@/components/public-avatar";
 
 export default function Home() {
   return (
@@ -19,6 +21,9 @@ export default function Home() {
         <h2 className="font-bold">Pattern 3: Multipart Uploads for Large Files</h2>
         <MultipartUploadForm />
       </div>
+
+      <PublicAvatar objectKey="public/Backend Integration & Authentication for Nextjs.png" alt="test"/>
+      <PrivateImage objectKey="private/{user session id}/mug.png" alt="test"/>
     </div>
   );
 }
